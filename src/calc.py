@@ -9,9 +9,9 @@ class Bin:
 
     def addItem(self, x, y, z,item):
         for i in self.items:
-            if ((i[0] <= item[0]+x && i[3] >= x) &&
-                (i[1] <= item[1]+y && i[4] >= y) &&
-                (i[2] <= item[2]+z && i[5] >= z))
+            if ((i[0] <= item[0]+x and i[3] >= x) and
+                (i[1] <= item[1]+y and i[4] >= y) and
+                (i[2] <= item[2]+z and i[5] >= z))
                 return False;
         self.items.append(x,y,z,item[0]+x,item[1]+y, item[2]+z)
         return True
